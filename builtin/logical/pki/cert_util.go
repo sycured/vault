@@ -44,6 +44,7 @@ var (
 	hostnameRegex                = regexp.MustCompile(`^(\*\.)?(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])\.?$`)
 	oidExtensionBasicConstraints = []int{2, 5, 29, 19}
 	oidExtensionSubjectAltName   = []int{2, 5, 29, 17}
+	minimumRsaKeys               = "RSA keys < 4096 bits are unsafe and not supported"
 )
 
 func oidInExtensions(oid asn1.ObjectIdentifier, extensions []pkix.Extension) bool {
@@ -444,7 +445,7 @@ func generateCert(ctx context.Context,
 	}
 
 	if input.role.KeyType == "rsa" && input.role.KeyBits < 4096 {
-		return nil, errutil.UserError{Err: "RSA keys < 4096 bits are unsafe and not supported"}
+		return nil, errutil.UserError{Err: minimumRsaKeys}
 	}
 
 	data, err := generateCreationBundle(b, input, caSign, nil)
@@ -550,7 +551,7 @@ func signCert(b *backend,
 
 		// Verify that the key is at least 4096 bits
 		if pubKey.N.BitLen() < 4096 {
-			return nil, errutil.UserError{Err: "RSA keys < 4096 bits are unsafe and not supported"}
+			return nil, errutil.UserError{Err: minimumRsaKeys}
 		}
 
 		// Verify that the bit size is at least the size specified in the role
@@ -594,7 +595,7 @@ func signCert(b *backend,
 			return nil, errutil.UserError{Err: "could not parse CSR's public key"}
 		}
 		if pubKey.N.BitLen() < 4096 {
-			return nil, errutil.UserError{Err: "RSA keys < 4096 bits are unsafe and not supported"}
+			return nil, errutil.UserError{Err: minimumRsaKeys}
 		}
 
 	}
