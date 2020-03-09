@@ -443,8 +443,8 @@ func generateCert(ctx context.Context,
 		return nil, errutil.InternalError{Err: "no role found in data bundle"}
 	}
 
-	if input.role.KeyType == "rsa" && input.role.KeyBits < 2048 {
-		return nil, errutil.UserError{Err: "RSA keys < 2048 bits are unsafe and not supported"}
+	if input.role.KeyType == "rsa" && input.role.KeyBits < 4096 {
+		return nil, errutil.UserError{Err: "RSA keys < 4096 bits are unsafe and not supported"}
 	}
 
 	data, err := generateCreationBundle(b, input, caSign, nil)
@@ -548,9 +548,9 @@ func signCert(b *backend,
 			return nil, errutil.UserError{Err: "could not parse CSR's public key"}
 		}
 
-		// Verify that the key is at least 2048 bits
-		if pubKey.N.BitLen() < 2048 {
-			return nil, errutil.UserError{Err: "RSA keys < 2048 bits are unsafe and not supported"}
+		// Verify that the key is at least 4096 bits
+		if pubKey.N.BitLen() < 4096 {
+			return nil, errutil.UserError{Err: "RSA keys < 4096 bits are unsafe and not supported"}
 		}
 
 		// Verify that the bit size is at least the size specified in the role
@@ -582,19 +582,19 @@ func signCert(b *backend,
 		}
 
 	case "any":
-		// We only care about running RSA < 2048 bit checks, so if not RSA
+		// We only care about running RSA < 4096 bit checks, so if not RSA
 		// break out
 		if csr.PublicKeyAlgorithm != x509.RSA {
 			break
 		}
 
-		// Run RSA < 2048 bit checks
+		// Run RSA < 4096 bit checks
 		pubKey, ok := csr.PublicKey.(*rsa.PublicKey)
 		if !ok {
 			return nil, errutil.UserError{Err: "could not parse CSR's public key"}
 		}
-		if pubKey.N.BitLen() < 2048 {
-			return nil, errutil.UserError{Err: "RSA keys < 2048 bits are unsafe and not supported"}
+		if pubKey.N.BitLen() < 4096 {
+			return nil, errutil.UserError{Err: "RSA keys < 4096 bits are unsafe and not supported"}
 		}
 
 	}
