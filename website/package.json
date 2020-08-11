@@ -6,7 +6,7 @@
   "dependencies": {
     "@bugsnag/js": "^6.5.2",
     "@bugsnag/plugin-react": "^6.5.0",
-    "@hashicorp/nextjs-scripts": "^6.0.0-2",
+    "@hashicorp/nextjs-scripts": "^7.1.0",
     "@hashicorp/react-button": "^2.1.6",
     "@hashicorp/react-case-study-slider": "^2.0.7",
     "@hashicorp/react-consent-manager": "^2.0.6",
@@ -31,13 +31,14 @@
     "imagemin-optipng": "^7.1.0",
     "imagemin-svgo": "^7.1.0",
     "isomorphic-unfetch": "^3.0.0",
-    "marked": "^0.7.0",
-    "next": "^9.3.0",
+    "marked": "^1.1.1",
+    "next": "^9.3.4",
     "nprogress": "^0.2.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "slugify": "^1.4.0",
-    "stringify-object": "^3.3.0"
+    "stringify-object": "^3.3.0",
+    "snyk": "^1.372.0"
   },
   "devDependencies": {
     "dart-linkcheck": "^2.0.12",
@@ -62,6 +63,9 @@
     "start": "npm run clear_babel_cache && next dev",
     "static": "npm run clear_babel_cache && npm run build && npm run export && cp _redirects out/.",
     "clear_babel_cache": "rm -rf .next/cache/next-babel-loader",
-    "linkcheck": "linkcheck https://www.vaultproject.io"
-  }
+    "linkcheck": "linkcheck https://www.vaultproject.io",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
