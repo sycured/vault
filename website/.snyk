@@ -504,3 +504,5 @@ patch:
         patched: '2020-08-11T13:05:09.208Z'
     - '@hashicorp/nextjs-scripts > typewriter > lodash':
         patched: '2020-08-11T13:05:09.208Z'
+    - next > styled-jsx > @babel/types > lodash:
+        patched: '2020-08-11T13:08:32.593Z'
