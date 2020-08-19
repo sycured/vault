@@ -536,3 +536,13 @@ patch:
         patched: '2020-08-19T11:23:04.861Z'
     - '@hashicorp/nextjs-scripts > typewriter > lodash':
         patched: '2020-08-19T11:23:04.861Z'
+    - '@hashicorp/nextjs-scripts > stylelint > lodash':
+        patched: '2020-08-19T11:26:55.748Z'
+    - '@hashicorp/nextjs-scripts > stylelint-order > lodash':
+        patched: '2020-08-19T11:26:55.748Z'
+    - '@hashicorp/nextjs-scripts > stylelint > table > lodash':
+        patched: '2020-08-19T11:26:55.748Z'
+    - '@hashicorp/nextjs-scripts > stylelint > postcss-reporter > lodash':
+        patched: '2020-08-19T11:26:55.748Z'
+    - '@hashicorp/nextjs-scripts > stylelint-order > postcss-sorting > lodash':
+        patched: '2020-08-19T11:26:55.748Z'
