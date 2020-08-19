@@ -536,3 +536,43 @@ patch:
         patched: '2020-08-19T11:23:04.861Z'
     - '@hashicorp/nextjs-scripts > typewriter > lodash':
         patched: '2020-08-19T11:23:04.861Z'
+    - '@hashicorp/nextjs-scripts > eslint > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/nextjs-scripts > inquirer > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/nextjs-scripts > stylelint > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/nextjs-scripts > stylelint-order > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/react-hero > formik > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - next > @babel/types > lodash:
+        patched: '2020-08-19T11:28:23.426Z'
+    - next > @babel/core > lodash:
+        patched: '2020-08-19T11:28:23.426Z'
+    - next > babel-plugin-transform-define > lodash:
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/nextjs-scripts > @next/bundle-analyzer > webpack-bundle-analyzer > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/nextjs-scripts > @typescript-eslint/parser > @typescript-eslint/typescript-estree > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/nextjs-scripts > eslint > table > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/nextjs-scripts > stylelint > table > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/nextjs-scripts > stylelint > postcss-reporter > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/nextjs-scripts > stylelint-order > postcss-sorting > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/react-footer > @hashicorp/react-newsletter-signup-form > formik > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - next > @babel/core > @babel/types > lodash:
+        patched: '2020-08-19T11:28:23.426Z'
+    - next > styled-jsx > @babel/types > lodash:
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/nextjs-scripts > @typescript-eslint/eslint-plugin > @typescript-eslint/experimental-utils > @typescript-eslint/typescript-estree > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/nextjs-scripts > @typescript-eslint/parser > @typescript-eslint/experimental-utils > @typescript-eslint/typescript-estree > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
+    - '@hashicorp/nextjs-scripts > typewriter > lodash':
+        patched: '2020-08-19T11:28:23.426Z'
