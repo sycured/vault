@@ -6,7 +6,7 @@
   "dependencies": {
     "@bugsnag/js": "^6.5.2",
     "@bugsnag/plugin-react": "^6.5.0",
-    "@hashicorp/nextjs-scripts": "^7.1.0",
+    "@hashicorp/nextjs-scripts": "^10.1.0",
     "@hashicorp/react-button": "^2.1.6",
     "@hashicorp/react-case-study-slider": "^2.0.7",
     "@hashicorp/react-consent-manager": "^2.1.5",
@@ -38,7 +38,7 @@
     "react-dom": "^16.13.0",
     "slugify": "^1.4.0",
     "stringify-object": "^3.3.0",
-    "snyk": "^1.372.0"
+    "snyk": "^1.379.2"
   },
   "devDependencies": {
     "dart-linkcheck": "^2.0.12",
