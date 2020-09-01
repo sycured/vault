@@ -13,7 +13,7 @@
     "@hashicorp/react-content": "^2.2.0",
     "@hashicorp/react-docs-sidenav": "^3.2.7",
     "@hashicorp/react-docs-sitemap": "^1.0.0",
-    "@hashicorp/react-footer": "3.2.4",
+    "@hashicorp/react-footer": "3.2.5",
     "@hashicorp/react-global-styles": "^4.4.2",
     "@hashicorp/react-hero": "3.1.4",
     "@hashicorp/react-image": "^2.0.1",
