@@ -38,7 +38,7 @@
     "react-dom": "^16.13.0",
     "slugify": "^1.4.5",
     "stringify-object": "^3.3.0",
-    "snyk": "^1.379.2"
+    "snyk": "^1.381.1"
   },
   "devDependencies": {
     "dart-linkcheck": "^2.0.12",
