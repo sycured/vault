@@ -577,4 +577,4 @@ patch:
     - '@hashicorp/nextjs-scripts > typewriter > lodash':
         patched: '2020-08-19T11:28:23.426Z'
     - snyk > snyk-nodejs-lockfile-parser > @yarnpkg/core > lodash:
-        patched: '2020-09-14T05:59:59.194Z'
+        patched: '2020-09-14T06:00:09.167Z'
