@@ -7,7 +7,7 @@
     "@bugsnag/js": "^6.5.2",
     "@bugsnag/plugin-react": "^6.5.0",
     "@hashicorp/nextjs-scripts": "^10.1.0",
-    "@hashicorp/react-button": "^2.2.3",
+    "@hashicorp/react-button": "^2.2.4",
     "@hashicorp/react-case-study-slider": "^2.1.4",
     "@hashicorp/react-consent-manager": "^2.1.6",
     "@hashicorp/react-content": "^2.2.1",
